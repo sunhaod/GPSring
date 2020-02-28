@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <WebView
+        android:id="@+id/id_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <EditText
+        android:id="@+id/edit_target"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="(请将输入法关闭后查询)"
+        android:textColorHint="@color/Red"
+        android:textColor="@color/White"/>
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_toRightOf="@id/edit_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示"/>
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_toRightOf="@id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"/>
+
+</RelativeLayout>
